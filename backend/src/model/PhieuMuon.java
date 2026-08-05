@@ -10,8 +10,13 @@ public class PhieuMuon {
 
     public PhieuMuon() {
     }
+    public PhieuMuon(String maPhieuMuon,
+                     String maBanDoc,
+                     String maSach,
+                     String ngayMuon,
+                     String ngayHenTra,
+                     String trangThai) {
 
-    public PhieuMuon(String maPhieuMuon, String maBanDoc, String maSach, String ngayMuon, String ngayHenTra, String trangThai) {
         this.maPhieuMuon = maPhieuMuon;
         this.maBanDoc = maBanDoc;
         this.maSach = maSach;
@@ -19,7 +24,6 @@ public class PhieuMuon {
         this.ngayHenTra = ngayHenTra;
         this.trangThai = trangThai;
     }
-
     public String getMaPhieuMuon() {
         return maPhieuMuon;
     }
@@ -56,7 +60,6 @@ public class PhieuMuon {
     public void setTrangThai(String trangThai) {
         this.trangThai = trangThai;
     }
-    
     @Override
     public String toString() {
         return "PhieuMuon{" +
@@ -68,5 +71,4 @@ public class PhieuMuon {
                 ", trangThai='" + trangThai + '\'' +
                 '}';
     }
-
 }
