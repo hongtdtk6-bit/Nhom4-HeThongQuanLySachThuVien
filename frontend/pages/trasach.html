@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý trả sách</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/trasach.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="logo">
+        <i class="fa-solid fa-book"></i>
+        <span>Library</span>
+      </div>
+      <ul>
+        <li>
+          <a href="../index.html">
+            <i class="fa-solid fa-chart-pie"></i>
+            Dashboard
+          </a>
+        </li>
+        <li>
+          <a href="bandoc.html">
+            <i class="fa-solid fa-users"></i>
+            Bạn đọc
+          </a>
+        </li>
+        <li>
+          <a href="sach.html">
+            <i class="fa-solid fa-book-open"></i>
+            Sách
+          </a>
+        </li>
+        <li>
+          <a href="muonsach.html">
+            <i class="fa-solid fa-hand-holding"></i>
+            Mượn sách
+          </a>
+        </li>
+        <li class="active">
+          <a href="trasach.html">
+            <i class="fa-solid fa-rotate-left"></i>
+            Trả sách
+          </a>
+        </li>
+        <li>
+          <a href="lichsu.html">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            Lịch sử
+          </a>
+        </li>
+        <li>
+          <a href="phat.html">
+            <i class="fa-solid fa-money-bill-wave"></i>
+            Tiền phạt
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- MAIN -->
+<main class="main">
+  <header class="header">
+    <div>
+      <h2>Quản lý trả sách</h2>
+      <p>Quản lý các phiếu trả sách trong thư viện</p>
+    </div>
+    <div class="header-right">
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input
+          type="text"
+          id="searchReturn"
+          placeholder="Tìm mã phiếu trả..."
+        />
+      </div>
+      <button class="add-btn" onclick="openModal('returnModal')">
+        <i class="fa-solid fa-plus"></i>
+        Tạo phiếu trả
+      </button>
+    </div>
+  </header>
+
+  <!-- STATISTIC -->
+  <section class="return-stat">
+    <div class="stat-card">
+      <i class="fa-solid fa-file-circle-check"></i>
+      <div>
+        <h3>0</h3>
+        <span>Phiếu trả</span>
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <i class="fa-solid fa-calendar-check"></i>
+      <div>
+        <h3>0</h3>
+        <span>Đúng hạn</span>
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <i class="fa-solid fa-triangle-exclamation"></i>
+      <div>
+        <h3>0</h3>
+        <span>Quá hạn</span>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+  <!-- TABLE -->
+
+  <section class="table-card">
+
+
+    <div class="table-header">
+
+      <h3>Danh sách phiếu trả</h3>
+
+
+      <button class="refresh-btn">
+
+        <i class="fa-solid fa-rotate"></i>
+
+      </button>
+
+
+    </div>
+
+
+
+
+    <table id="returnTable">
+
+
+      <thead>
+
+        <tr>
+
+          <th>Mã phiếu trả</th>
+
+          <th>Mã phiếu mượn</th>
+
+          <th>Bạn đọc</th>
+
+          <th>Sách</th>
+
+          <th>Ngày trả</th>
+
+          <th>Số ngày trễ</th>
+
+          <th>Tiền phạt</th>
+
+          <th>Chức năng</th>
+
+
+        </tr>
+
+
+      </thead>
+
+
+
+      <tbody>
+      </tbody>
+
+
+
+    </table>
+
+
+  </section>
+
+
+
+</main>
+
+
+
+
+
+<!-- MODAL -->
+
+<div class="modal" id="returnModal">
+
+
+  <div class="modal-content">
+
+
+
+    <div class="modal-header">
+
+
+      <h2>Tạo phiếu trả</h2>
+
+
+      <button onclick="closeModal('returnModal')">
+
+        <i class="fa-solid fa-xmark"></i>
+
+      </button>
+
+
+    </div>
+
+
+
+
+
+    <div class="modal-body">
+
+
+
+      <!-- Phiếu mượn -->
+
+      <div class="form-group">
+
+
+        <label>Phiếu mượn</label>
+
+
+        <select id="borrow">
+
+
+        </select>
+
+
+      </div>
+
+
+
+
+
+      <!-- Ngày trả -->
+
+      <div class="form-group">
+
+
+        <label>Ngày trả</label>
+
+
+        <input
+          type="date"
+          id="returnDate"
+          readonly
+        />
+
+
+      </div>
+
+
+
+
+
+      <!-- Tiền phạt -->
+
+      <div class="form-group">
+
+
+        <label>Tiền phạt</label>
+
+
+        <input
+          type="number"
+          id="fine"
+          value="0"
+          readonly
+        />
+
+
+      </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <div class="modal-footer">
+
+
+      <button
+        class="cancel-btn"
+        onclick="closeModal('returnModal')"
+      >
+
+        Hủy
+
+      </button>
+
+
+
+
+
+      <button
+        class="save-btn"
+        onclick="saveReturn()"
+      >
+
+        Lưu
+
+      </button>
+
+
+
+    </div>
+
+
+
+  </div>
+
+
+
+</div>
+
+
+
+
+
+<script src="../js/api.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/trasach.js"></script>
+  </body>
+</html>

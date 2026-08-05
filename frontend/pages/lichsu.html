@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lịch sử mượn trả</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/lichsu.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--  SIDEBAR -->
+    <aside class="sidebar">
+      <div class="logo">
+        <i class="fa-solid fa-book"></i>
+        <span>Library</span>
+      </div>
+      <ul>
+        <li>
+          <a href="../index.html">
+            <i class="fa-solid fa-chart-pie"></i>
+            Dashboard
+          </a>
+        </li>
+        <li>
+          <a href="bandoc.html">
+            <i class="fa-solid fa-users"></i>
+            Bạn đọc
+          </a>
+        </li>
+        <li>
+          <a href="sach.html">
+            <i class="fa-solid fa-book-open"></i>
+            Sách
+          </a>
+        </li>
+        <li>
+          <a href="muonsach.html">
+            <i class="fa-solid fa-hand-holding"></i>
+            Mượn sách
+          </a>
+        </li>
+        <li>
+          <a href="trasach.html">
+            <i class="fa-solid fa-rotate-left"></i>
+            Trả sách
+          </a>
+        </li>
+        <li class="active">
+          <a href="lichsu.html">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            Lịch sử
+          </a>
+        </li>
+        <li>
+          <a href="phat.html">
+            <i class="fa-solid fa-money-bill-wave"></i>
+            Tiền phạt
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+      <header class="header">
+        <div>
+          <h2>Lịch sử mượn trả sách</h2>
+          <p>Theo dõi toàn bộ lịch sử giao dịch trong thư viện</p>
+        </div>
+        <div class="header-right">
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              type="text"
+              id="searchHistory"
+              placeholder="Tìm mã phiếu, bạn đọc, sách..."
+            />
+          </div>
+          <button class="refresh-btn" id="refreshHistory">
+            <i class="fa-solid fa-rotate"></i>
+          </button>
+        </div>
+      </header>
+
+      <!--  THỐNG KÊ  -->
+      <section class="history-stat">
+        <div class="stat-card">
+          <i class="fa-solid fa-file-lines"></i>
+          <div>
+            <h3 id="totalHistory">0</h3>
+            <span>Tổng giao dịch</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <i class="fa-solid fa-book-open-reader"></i>
+          <div>
+            <h3 id="borrowHistory">0</h3>
+            <span>Mượn sách</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <i class="fa-solid fa-book"></i>
+          <div>
+            <h3 id="returnHistory">0</h3>
+            <span>Trả sách</span>
+          </div>
+        </div>
+      </section>
+
+      <!--  TABLE  -->
+      <section class="table-card">
+        <div class="table-header">
+          <h3>Lịch sử giao dịch</h3>
+        </div>
+        <table id="historyTable">
+          <thead>
+            <tr>
+              <th>Mã phiếu</th>
+              <th>Bạn đọc</th>
+              <th>Sách</th>
+              <th>Ngày</th>
+              <th>Trạng thái</th>
+              <th>Chi tiết</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <script src="../js/api.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/lichsu.js"></script>
+  </body>
+</html>
+
