@@ -54,7 +54,27 @@ function renderTable() {
 
 //THỐNG KÊ
 function updateStatistic() {
-    document.getElementById("totalBook").innerHTML = books.length;
+
+    // Tổng đầu sách
+    document.getElementById("totalBook").innerText =
+        books.length;
+
+    // Tổng số thể loại
+    const tongTheLoai = new Set(
+        books.map(book => book.theLoai)
+    ).size;
+
+    document.getElementById("totalCategory").innerText =
+        tongTheLoai;
+
+    // Tổng số lượng bản
+    const tongSoLuong = books.reduce(
+        (tong, book) => tong + Number(book.soLuong),
+        0
+    );
+
+    document.getElementById("totalQuantity").innerText =
+        tongSoLuong;
 }
 
 //THÊM / SỬA
