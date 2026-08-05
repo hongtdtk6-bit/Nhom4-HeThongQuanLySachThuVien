@@ -1,12 +1,12 @@
 package model;
 
 public class PhatSinhVienThuong implements ChinhSachPhat {
-    private static final double TEN_PHAT_MOI_NGAY = 5000.0;
+    private static final double TIEN_PHAT_MOI_NGAY = 5000;
     @Override
     public double tinhTienPhat(int soNgayTre) {
-    if (soNgayTre <= 0) {
-        return 0.0;
-    }
-    return soNgayTre * TEN_PHAT_MOI_NGAY;
+        if (soNgayTre <= 0) {
+            return 0;
+        }
+        return soNgayTre * TIEN_PHAT_MOI_NGAY;
     }
 }
