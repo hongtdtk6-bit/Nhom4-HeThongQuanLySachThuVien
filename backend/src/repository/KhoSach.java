@@ -1,5 +1,7 @@
 package repository;
 
+import utils.DocGhiJson;
+
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;

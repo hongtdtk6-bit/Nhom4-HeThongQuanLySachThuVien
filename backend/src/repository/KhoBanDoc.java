@@ -34,7 +34,7 @@ public class KhoBanDoc {
         return null;
     }
 
-    public boolean themBanDoc(BanDoc banDoc) {
+    public boolean them(BanDoc banDoc) {
         if (banDoc == null) {
             return false;
         }
@@ -45,8 +45,8 @@ public class KhoBanDoc {
         luu();
         return true;
     }
-    public boolean capNhat(BanDoc banDoc) {
-        if (banDoc == null) {
+    public boolean capNhat(BanDoc banDocMoi) {
+        if (banDocMoi == null) {
             return false;
         }
         for (int i = 0; i < danhSachBanDoc.size(); i++) {
