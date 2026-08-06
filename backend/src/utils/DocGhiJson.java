@@ -46,7 +46,7 @@ public class DocGhiJson {
         }
     }
 
-    //Ghi danh sách xuống file JSON.
+     //Ghi danh sách xuống file JSON.
 
     public static <T> void ghiDanhSach(String duongDan, List<T> danhSach) {
         try {
