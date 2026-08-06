@@ -72,7 +72,7 @@ public class DichVuMuonSach {
         }
 
         String maPhieuMuon = SinhMa.sinhMa("PM", dsMa);
-        
+
         // Tạo phiếu mượn
         PhieuMuon phieuMuon = new PhieuMuon(
                 maPhieuMuon,
@@ -105,5 +105,34 @@ public class DichVuMuonSach {
      */
     public List<PhieuMuon> layDanhSachPhieuMuon() {
         return khoPhieuMuon.getDanhSachPhieuMuon();
+    }
+
+    public String capNhatTrangThai(String maPhieuMuon, String trangThai) {
+    PhieuMuon phieuMuon = khoPhieuMuon.timTheoMa(maPhieuMuon);
+        if (phieuMuon == null) {
+            return "Không tìm thấy phiếu mượn.";
+    }
+        if (phieuMuon.getTrangThai().equalsIgnoreCase(trangThai)) {
+            return "Phiếu mượn đã ở trạng thái này.";
+    }
+    // Đang mượn -> Đã trả
+        if (phieuMuon.getTrangThai().equalsIgnoreCase("Đang mượn") && trangThai.equalsIgnoreCase("Đã trả")) {
+            Sach sach = khoSach.timTheoMa(phieuMuon.getMaSach());
+            if (sach != null) {
+                sach.setSoLuong(sach.getSoLuong() + 1);
+                khoSach.capNhat(sach);
+        }
+            BanDoc banDoc = khoBanDoc.timTheoMa(phieuMuon.getMaBanDoc());
+        if (banDoc != null) {
+            int soLuong = banDoc.getSoSachDangMuon();
+            if (soLuong > 0) {
+                banDoc.setSoSachDangMuon(soLuong - 1);
+                }
+            khoBanDoc.capNhat(banDoc);
+            }
+        }
+        phieuMuon.setTrangThai(trangThai);
+        khoPhieuMuon.capNhat(phieuMuon);
+        return "Cập nhật trạng thái thành công.";
     }
 }

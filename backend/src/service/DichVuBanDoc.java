@@ -22,7 +22,7 @@ public class DichVuBanDoc {
 
     public boolean themBanDoc(BanDoc banDoc) {
 
-        List<BanDoc> dsMa = new ArrayList<>();
+        List<String> dsMa = new ArrayList<>();
         for (BanDoc bd : khoBanDoc.getDanhSachBanDoc()) {
             dsMa.add(bd.getMaNguoiDung());
         }
@@ -33,7 +33,7 @@ public class DichVuBanDoc {
         case "Sinh Viên Ưu Tiên":
             banDocMoi = new SinhVienUuTien();
             break;
-        case "Giảng Viên":
+        case "Giảng viên":
             banDocMoi = new GiangVien();
             break;
         default:
@@ -47,13 +47,13 @@ public class DichVuBanDoc {
     banDocMoi.setSoSachDangMuon(0);
 
     khoBanDoc.them(banDocMoi);
-    return khoBanDoc.themBanDoc(banDocMoi);
+    return khoBanDoc.them(banDocMoi);
 }
 public boolean capNhatBanDoc(BanDoc banDoc) {
     return khoBanDoc.capNhat(banDoc);
 }
 public boolean xoaBanDoc(String maBanDoc) {
-    return khoBanDoc.xoaBanDoc(maBanDoc);
+    return khoBanDoc.xoa(maBanDoc);
 }
 
 
