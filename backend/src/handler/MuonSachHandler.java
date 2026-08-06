@@ -105,4 +105,25 @@ public class MuonSachHandler implements HttpHandler {
                 "GET, POST, PUT, DELETE, OPTIONS"
         );
     }
+    private void capNhatTrangThai(HttpExchange exchange)
+            throws IOException {
+
+        InputStream input = exchange.getRequestBody();
+
+        String body = new String(
+                input.readAllBytes(),
+                StandardCharsets.UTF_8
+        );
+        JsonObject json = gson.fromJson(body, JsonObject.class);
+
+        String maPhieuMuon = json.get("maPhieuMuon").getAsString();
+
+        String trangThai = json.get("trangThai").getAsString();
+
+        String ketQua = dichVuMuonSach.capNhatTrangThai(
+                maPhieuMuon,
+                trangThai
+        );
+
+        guiPhanHoi(exchange, 200, ketQua);}
 }
