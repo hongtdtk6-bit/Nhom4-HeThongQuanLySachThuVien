@@ -1,0 +1,37 @@
+[
+  {
+    "maSach": "S002",
+    "tenSach": "Tiếng Nhật",
+    "tacGia": "Hồng Trang",
+    "theLoai": "Ngoại ngữ",
+    "namXuatBan": 0,
+    "soLuong": 2
+  },
+  {
+    "maSach": "S003",
+    "tenSach": "Dế Mèn Phiêu Lưu Ký",
+    "tacGia": "Tô Hoài",
+    "theLoai": "Văn học",
+    "nhaXuatBan": "",
+    "namXuatBan": 2026,
+    "soLuong": 2
+  },
+  {
+    "maSach": "S004",
+    "tenSach": "Lập trình cơ bản",
+    "tacGia": "Nguyễn Minh Anh",
+    "theLoai": "Công nghệ thông tin",
+    "nhaXuatBan": "",
+    "namXuatBan": 2026,
+    "soLuong": 10
+  },
+  {
+    "maSach": "S005",
+    "tenSach": "Tiếng Nhật chuyên ngành IT",
+    "tacGia": "Minh Ngọc",
+    "theLoai": "Công nghệ thông tin",
+    "nhaXuatBan": "",
+    "namXuatBan": 2026,
+    "soLuong": 4
+  }
+]

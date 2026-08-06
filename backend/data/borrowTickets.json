@@ -1,0 +1,42 @@
+[
+  {
+    "maPhieuMuon": "PM002",
+    "maBanDoc": "BD001",
+    "maSach": "S002",
+    "ngayMuon": "2026-08-05",
+    "ngayHenTra": "2026-08-12",
+    "trangThai": "Đã trả"
+  },
+  {
+    "maPhieuMuon": "PM003",
+    "maBanDoc": "BD003",
+    "maSach": "S003",
+    "ngayMuon": "2026-08-05",
+    "ngayHenTra": "2026-08-12",
+    "trangThai": "Đã trả"
+  },
+  {
+    "maPhieuMuon": "PM004",
+    "maBanDoc": "BD002",
+    "maSach": "S002",
+    "ngayMuon": "2026-08-06",
+    "ngayHenTra": "2026-08-13",
+    "trangThai": "Đã trả"
+  },
+  {
+    "maPhieuMuon": "PM005",
+    "maBanDoc": "BD005",
+    "maSach": "S002",
+    "ngayMuon": "2026-08-06",
+    "ngayHenTra": "2026-08-13",
+    "trangThai": "Đang mượn"
+  },
+  {
+    "maPhieuMuon": "PM006",
+    "maBanDoc": "BD007",
+    "maSach": "S006",
+    "ngayMuon": "2026-08-06",
+    "ngayHenTra": "2026-08-13",
+    "trangThai": "Đang mượn"
+  }
+]

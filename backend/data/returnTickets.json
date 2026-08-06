@@ -1,0 +1,16 @@
+[
+  {
+    "maPhieuTra": "PT001",
+    "maPhieuMuon": "PM002",
+    "ngayTra": "2026-08-05",
+    "soNgayTre": 0,
+    "tienPhat": 0.0
+  },
+  {
+    "maPhieuTra": "PT002",
+    "maPhieuMuon": "PM003",
+    "ngayTra": "2026-08-05",
+    "soNgayTre": 0,
+    "tienPhat": 0.0
+  }
+]

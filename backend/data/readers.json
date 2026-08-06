@@ -1,0 +1,58 @@
+[
+  {
+    "loaiBanDoc": "Sinh viên thường",
+    "soSachDangMuon": 1,
+    "gioiHanMuon": 3,
+    "maNguoiDung": "BD001",
+    "hoTen": "Nguyễn Minh Hồng",
+    "soDienThoai": "0987654321"
+  },
+  {
+    "loaiBanDoc": "Sinh viên ưu tiên",
+    "soSachDangMuon": 0,
+    "gioiHanMuon": 5,
+    "maNguoiDung": "BD002",
+    "hoTen": "Phí Thị Thu Hường",
+    "soDienThoai": "0378123947"
+  },
+  {
+    "loaiBanDoc": "Giảng viên",
+    "soSachDangMuon": 0,
+    "gioiHanMuon": 10,
+    "maNguoiDung": "BD003",
+    "hoTen": "Phan Thị Thanh Hương",
+    "soDienThoai": "038917363"
+  },
+  {
+    "loaiBanDoc": "Giảng viên",
+    "soSachDangMuon": 0,
+    "gioiHanMuon": 0,
+    "maNguoiDung": "BD004",
+    "hoTen": "Đỗ Vân Anh",
+    "soDienThoai": "078237913"
+  },
+  {
+    "loaiBanDoc": "Sinh viên ưu tiên",
+    "soSachDangMuon": 1,
+    "gioiHanMuon": 5,
+    "maNguoiDung": "BD005",
+    "hoTen": "Lê Thị Thúy Hằng",
+    "soDienThoai": "4569871230"
+  },
+  {
+    "loaiBanDoc": "Giảng viên",
+    "soSachDangMuon": 0,
+    "gioiHanMuon": 10,
+    "maNguoiDung": "BD006",
+    "hoTen": "Mai Thu Giang",
+    "soDienThoai": "0981237845"
+  },
+  {
+    "loaiBanDoc": "Sinh viên ưu tiên",
+    "soSachDangMuon": 1,
+    "gioiHanMuon": 5,
+    "maNguoiDung": "BD007",
+    "hoTen": "Đường Ngọc Châm",
+    "soDienThoai": "1245986209"
+  }
+]
