@@ -7,11 +7,10 @@ public class BanDoc extends NguoiDung {
     public BanDoc() {
 
     }
-    public BanDoc(String maNguoiDung, String hoTen, String soDienThoai, String loaiBanDoc, int soSachDangMuon, int gioiHanMuon) {
+    public BanDoc(String maNguoiDung, String hoTen, String soDienThoai, String loaiBanDoc, int soSachDangMuon) {
         super(maNguoiDung, hoTen, soDienThoai);
         this.loaiBanDoc = loaiBanDoc;
         this.soSachDangMuon = soSachDangMuon;
-        this.gioiHanMuon = gioiHanMuon;
     }
     public String getLoaiBanDoc() {
         return loaiBanDoc;

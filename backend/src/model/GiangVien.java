@@ -1,9 +1,9 @@
 package model;
 
-public class GiangVien extends NguoiDung {
+public class GiangVien extends BanDoc{
     public GiangVien() {
         super();
-        setLoaiBanDoc("Giảng Viên");
+        setLoaiBanDoc("Giảng viên");
         setGioiHanMuon(10);
     }
 
@@ -12,12 +12,9 @@ public class GiangVien extends NguoiDung {
         String soDienThoai, 
         int soSachDangMuon) {
         
-            super(maNguoiDung, 
-                hoTen, 
-                soDienThoai,
-                "Giảng Viên",
-                soSachDangMuon,);
-                setGioiHanMuon(10);
+        super(maNguoiDung, hoTen,soDienThoai,"Giảng viên",soSachDangMuon);
+
+        setGioiHanMuon(10);
         
     }
 

@@ -9,7 +9,8 @@ public class SinhVienUuTien extends BanDoc {
     }
     public SinhVienUuTien(String maNguoiDung, 
         String hoTen, 
-        String soDienThoai) {
+        String soDienThoai,
+        int soSachDangMuon) {
         
             super(maNguoiDung, 
                 hoTen, 
